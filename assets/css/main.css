@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+
+/*Splash Screen Key Frames*/
+@keyframes fadeIn { 
+	from { opacity: 0; } to { opacity: 1; }
+}
+
+/*Splash Screen*/
+.fade-in {
+	opacity: 0;
+	animation: fadeIn ease-in 1;
+	animation-fill-mode: forwards;
+	animation-duration: 0.3s;
+	animation-delay: 0.5s;
+}
+
+.splashscreen {
+	background: url(../../images/splash-bg.jpg) center center;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	min-height: 360px;
+	z-index: 999;
+	background-size: cover;
+	background-attachment: fixed;
+	text-align: center;
+}
+.textsplash {
+	text-shadow: 0 2px 10px #000;
+	font: bold 2.5em;
+	color: #f1f1f1;
+	text-align: center;
+	animation-delay: 1s;
+	line-height: 550px;
+  	height: 550px;
+  	font-size: 38px;
+}
+
+img {
+	 max-width: 100%;
+  	height: auto;
+  	width: auto\9;
+}
+.splash-arrow {
+	color: white;
+    font-size: 1.2em;
+    position: absolute;
+    bottom: 55px;
+    left: 50%;
+    margin-left: -25px;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    font-weight: bold;
+    transition: all 0.1s ease;
+    animation-delay: 1.5s;
+    border: 3px solid white;
+    border-radius: 50%;
+}
+.splash-arrow:hover{
+text-decoration: none;
+    bottom: 50px;
+}
+
+/*Batas Splash Screen*/
+
+/*Body dan Isinya*/
+body, h1,h2,h3,h4,h5,h6 {
+	font-family: "Montserrat", sans-serif;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	}
+
+.content-area {
+	padding-top: 64px !important;
+	padding-bottom: 64px !important;
+
+}
+
+#home, #about, #experience, #contact, #skills {
+	color: #757575 !important;
+	text-align: justify !important;
+	max-width: 980px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.opacity {
+	opacity: 0.60;
+	border: 0;
+	border-top: 1px solid #eee;
+	margin: 20px 0;
+}
+
+/*Ketika Layar 600px kurang*/
+@media only screen and (max-width: 600px) {
+	#main {
+		margin-left: 0
+		}
+	}
+
+body {
+	color:#fff!important;
+	background-color:#000!important;
+	margin: 0;
+	padding: 0;
+}
+.profile {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-direction: column;
+	perspective: 1000px;
+	position: relative;
+	min-height: 100%;
+	padding: 1.5em;
+	z-index: 2;
+}
+
+.details {
+		padding: 4.5em 3em 3em 3em ;
+		background: #ffffff;
+		border-radius: 4px;
+		cursor: default;
+		max-width: 100%;
+		opacity: 0.95;
+		position: relative;
+		text-align: center;
+		margin-top: 180px;
+		margin-bottom: 500px;
+	}
+
+span.avatar {
+			position: relative;
+			display: block;
+			margin-bottom: 1.5em;
+		}
+
+span.avatar img {
+		display: block;
+		margin: 0 auto;
+		border-radius: 100%;
+		box-shadow: 0 0 0 1.5em #ffffff;
+		}
+
+span.avatar:before {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: -3em;
+		width: calc(100% + 6em);
+		height: 1px;
+		z-index: -1;
+		background: #c8cccf;
+			}
+.details h1, .details p {
+		color: #757575;
+	}
+
+/*Side Bar sebelah kanan*/
+.navigation {
+	background-image: url(../../images/bg.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 100vh;
+}
+
+.navigation a{
+	text-decoration: none;
+}
+.navigation h2 {
+	font-weight: bold;
+	position: relative;
+	text-align: center;
+}
+.btn-area{
+	background-color: #10b0ee;
+	width: 300px;
+	height: 60px;
+	border-radius: 30px;
+	position: fixed;
+	right: -230px;
+	transition: .8s ease;
+	box-shadow: 4px 5px 10px #000; 
+}
+
+.btn-area:hover {
+	background-color: #262626;
+	position: fixed;
+	right: -50px;
+	width: 300px;
+	border: none;
+	color: #fff;
+	border-radius: 0;
+}
+
+.btn-area h2 i {
+	position: absolute;
+	left: 25px;
+	color: #fff;
+	font-size: 25px !important;
+	padding-top: 4px;
+}
+
+#nav1 {
+	top: 200px;
+}
+
+#nav2 {
+	top: 270px;
+}
+
+#nav3 {
+	top: 340px;
+}
+
+#nav4 {
+	top: 410px;
+}
+
+#nav5 {
+	top: 480px;
+}
+/*Batas Side Bar*/
+
+* {
+	box-sizing: inherit;
+}
+
+.home {
+	font-size:36px!important;
+}
+
+.colour {
+	color: #ffffff;
+}
+.header2, .header21 {
+	display: block;
+    font-size: 1.5em;
+	color: #f1f1f1 !important;
+	font-weight: 400;
+	margin: 10px 0;
+}
+
+.header21 {
+	padding-top: 16px!important;
+    padding-bottom: 16px!important;
+}
+
+.edukasi, .interest {
+	padding-left: 0;
+}
+.smalllogo {
+	color: #f1f1f1 !important;
+}
+.header3 {
+	color: #f1f1f1 !important;
+}
+
+.event {
+	list-style: disc;
+}
+.skills {
+	letter-spacing: 4px;
+}
+.loadingbg{
+	color: #000!important;
+    background-color: #fff!important;
+}
+.isiloading {
+	color: #fff!important;
+    background-color: #616161!important;
+}
+.content {
+	text-align: center;
+}
+
+.button {
+	background-color: DodgerBlue;
+  	border: none;
+  	color: white;
+  	padding: 12px 30px;
+  	cursor: pointer;
+  	font-size: 20px;
+  	text-align: center;
+}
+
+.button:hover {
+	background-color: RoyalBlue;
+}
